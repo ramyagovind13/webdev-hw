@@ -6,11 +6,44 @@ body {
 }
 
 .nav-list {
+  list-style-type: none;
+  background-color: var(--green);
+  position: fixed;
+  margin: 0px;
+  padding: 0px;
 }
 
 .list-item {
-  background-color: var(--green);
+  font-size: 1em;
+  text-align: center;
+  display: inline-block;
 }
 
 .nav-link {
+  text-decoration: none;
+  color: var(--white);
+  padding: 1em;
+  display: block;
+}
+
+.nav-link:hover {
+  background-color: orange;
+  color: black;
+}
+
+.nav-link:active {
+  background-color: orange;
+  color: black;
+}
+
+@media (max-width: 414px) {
+  .list-item {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 415px) {
+  .nav-list {
+    justify-content: left;
+  }
 }
