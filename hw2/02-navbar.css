@@ -36,9 +36,20 @@ body {
   color: black;
 }
 
+.nav-link:active {
+  background-color: orange;
+  color: black;
+}
+.nav-link:focus {
+  background-color: orange;
+  color: black;
+}
+
 @media (max-width: 414px) {
-  .list-item {
-    display: inline-block;
+  .nav-list {
+    flex-flow: column wrap;
+    justify-content: space-around;
+    width: 100%;
   }
 }
 
