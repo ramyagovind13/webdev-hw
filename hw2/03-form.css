@@ -2,16 +2,67 @@
 If you would prefer, you can delete them and use your own classes and style declarations. */
 
 .form {
+  display: block;
+  background-color: var(--white);
+  border: black solid 1px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
-.form-element {
+form > label {
+  font-weight: bold;
 }
 
-.btn {
+fieldset {
+  border-width: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
-.btn-primary {
+legend {
+  padding: 0;
+  margin-bottom: 0.2em;
+  font-weight: bold;
 }
 
-.btn-secondary {
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 60%;
+  padding: 3px;
+  margin-bottom: 10px;
+  border: 2px solid #cccccc;
+}
+
+input[type="date"] {
+  width: 60%;
+  padding: 3px;
+  margin-bottom: 10px;
+  border: 2px solid #cccccc;
+  font-weight: bold;
+}
+
+.button,
+.reset-btn {
+  font-weight: bold;
+  width: 45%;
+  height: 30px;
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  background-color: var(--white);
+}
+.button {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.reset-btn {
+  color: var(--green);
+}
+
+.button:hover {
+  background-color: var(--orange);
+  color: var(--black);
 }
