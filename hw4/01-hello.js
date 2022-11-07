@@ -9,18 +9,18 @@ div.style.width = "50vw";
 div.style.margin = "auto";
 div.style.marginTop = "50px";
 
-let profile_intro = document.createElement("img");
-profile_intro.src = "../images/ramya.jpg";
-profile_intro.alt = "Ramya Govindaraj photo";
-profile_intro.style.width = "200px";
-profile_intro.style.height = "200px";
-profile_intro.style.margin = "0 auto";
-profile_intro.style.display = "flex";
-profile_intro.style.borderRadius = "50%";
-profile_intro.style.justifyContent = "center";
+let profileIntro = document.createElement("img");
+profileIntro.src = "../images/ramya.jpg";
+profileIntro.alt = "Ramya Govindaraj photo";
+profileIntro.style.width = "200px";
+profileIntro.style.height = "200px";
+profileIntro.style.margin = "0 auto";
+profileIntro.style.display = "flex";
+profileIntro.style.borderRadius = "50%";
+profileIntro.style.justifyContent = "center";
 
-let para_intro = document.createElement("p");
-para_intro.innerHTML = `<span style = "font-weight: bold">
+let paraIntro = document.createElement("p");
+paraIntro.innerHTML = `<span style = "font-weight: bold">
 My name is Ramya. I am a graduate student and this is my first term in
 PSU.</span> I worked as backend software developer in one of the
 multinational companies. I have knowledge about backend technologies
@@ -30,5 +30,5 @@ portrait and cooking.`;
 
 main.append(heading);
 main.append(div);
-div.append(profile_intro);
-div.append(para_intro);
+div.append(profileIntro);
+div.append(paraIntro);

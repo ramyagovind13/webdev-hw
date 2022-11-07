@@ -5,13 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>03 - Form</title>
-    <script defer src="05-form.js"></script>
+    <script defer src="03-form.js"></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/03-form.css" />
   </head>
   <body>
     <main>
-      <form class="form" action="">
-        <h1 class="title">Registration Form</h1>
-      </form>
+      <div class="form">
+        <h1>REGISTRATION FORM <span></span></h1>
+        <form action="">
+          <label for="username">Username:&nbsp;</label>
+          <input type="text" name="username" id="username" />
+          <br /><br />
+          <label for="email"
+            >Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input type="email" name="email" id="email" />
+          <br /><br />
+          <label for="password">Password:&nbsp;</label>
+          <input type="password" name="password" id="password" />
+          <br /><br />
+
+          <fieldset>
+            <legend>Would you like to sign up for the newsletter?</legend>
+            <input type="radio" name="option" id="yes" value="yes" />
+            <label for="yes">Yes, sign me up</label>
+            <input type="radio" name="option" id="no" value="no" />
+            <label for="no">No, thank you</label>
+          </fieldset>
+          <br />
+
+          <label for="date"
+            >Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input type="date" name="date" id="date" />
+          <br /><br />
+
+          <input type="submit" value="Submit" name="submit" class="button" />
+          <input type="reset" value="Reset" name="reset" class="reset-btn" />
+        </form>
+      </div>
     </main>
   </body>
 </html>
