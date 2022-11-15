@@ -44,9 +44,13 @@ $(document).ready(function () {
         justifyContent: "center",
       });
 
-    $("#maindiv").hover(function () {
-      $(this).css("background-color", "purple");
-    });
+    $("#maindiv")
+      .on("mouseenter", function () {
+        $(this).css({ "background-color": "purple", color: "white" });
+      })
+      .on("mouseleave", function () {
+        $(this).css({ "background-color": "transparent", color: "black" });
+      });
   };
 
   const fetchData = (url) => {
